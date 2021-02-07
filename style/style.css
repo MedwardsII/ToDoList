@@ -1,0 +1,120 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/*****Navbar styling*****/
+.navBar {
+    background-color: black;
+    padding: 20px;
+}
+.navBar > h1 {
+    color: white;
+    font-size: 50px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0 0;
+}
+
+/*****Input form styling*****/
+form {
+    height: 40px;
+}
+
+form input:first-child{
+    width: 70%;
+    margin-right: 20px;
+    font-size: 20px;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+}
+
+form input:last-child{
+    width: 70px;
+    font-size: 16px;
+}
+
+form input:last-child:hover:enabled {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*****Task row styling*****/
+.wrapper-task {
+    flex-direction:column-reverse;
+}
+.wrapper > li {
+    display: flex;
+    width: 85%;
+    max-width: 1200px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px 0 15px 0;
+    align-self: center;
+    margin-bottom: 10px;
+}
+.wrapper > li > input{
+    align-self: center;
+    margin: 0 15px 0 15px;
+    width: 30px;
+    height: 17px;
+    cursor: pointer;
+}
+.wrapper > li > input:hover{
+    transform: scale(1.1);
+}
+.wrapper > li > p {
+    display: block;
+    width: 100%;
+    align-self: center;
+    font-size: 18px;
+}
+.wrapper > li > img {
+    align-self: center;
+    margin: 0 15px 0 15px;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+.wrapper > li > img:hover {
+    transform: scale(1.1);
+}
+
+

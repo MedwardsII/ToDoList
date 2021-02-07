@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8" />
+        <title>ToDo List App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Michael Edwards">
+        <link rel="stylesheet" href="style/style.css">
+    </header>
+    <body onload="loadData()">
+        <!--Nav Bar-->
+        <nav class="navBar">
+            <h1>ToDo List</h1>
+        </nav>
+        <!--NavBar section end-->
+        <div>
+            <form class="wrapper" id="taskInputBox">
+                <input type="text" placeholder="New Note" name="task-data">
+                <input type="button" value="Add" name="addBtn" disabled>
+            </form>
+            <ul class="wrapper wrapper-task" name="ul-container">
+
+            </ul>
+        </div>
+        
+    </body>
+    <footer></footer>
+    <div>
+        <script src="script/index.js"></script> 
+    </div>
+</html>
