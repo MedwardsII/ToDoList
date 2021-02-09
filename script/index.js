@@ -171,16 +171,27 @@ function isCompleteDecor(checkBox){
 function filterTask(targetTasksObj){ //func to search task
     try{
         const tasksObjArray = document.getElementsByTagName("li");
+        
         const targetStr = targetTasksObj.target.form[0].value.toLowerCase();
         
-        for(n of tasksObjArray){
-
-            if(!n.getElementsByTagName("p")[0].innerHTML.toLowerCase().includes(targetStr)){
-                n.style.display = "none";
-            }else{
+        const targetStrArray = targetStr.split(" ").filter(word => word.length > 0); 
+        
+        for(const n of tasksObjArray){
+            
+            //if filter array is empty
+            if(targetStrArray.length === 0)
                 n.style.display = "flex";
+            
+            for(const j of targetStrArray){
+                    
+                if(!n.getElementsByTagName("p")[0].innerHTML.toLowerCase().includes(j)){
+                    n.style.display = "none";
+                }else{
+                    n.style.display = "flex";
+                }
             }
         }
+        
     }catch(e){
         return e;
     }
