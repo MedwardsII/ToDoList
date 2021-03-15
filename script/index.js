@@ -88,18 +88,13 @@ document.addEventListener("click", e => {
         switch(e.target.name){
             case "addBtn":
                 const taskObj = e.target.form[0];
-
                 // do nothing
                 if (taskObj.value.trim(" ") === "")
                     return
-
                 const task = new Task(taskObj);
                 task.newTask();
-
                 taskObj.value = ""; //clear input box
-
                 e.target.disabled = true; //lock add button
-
                 filterTask(e); //// apply filter to search
                 break;
             case "deleteBtn":
